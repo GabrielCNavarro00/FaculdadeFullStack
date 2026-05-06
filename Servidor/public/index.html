@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Servidor</title>
+</head>
+<body>
+    <h1>Servidor tá funcionando </h1>
+
+    <h3>Form GET</h3>
+    <form action="/inicio" method="get">
+        <input type="text" name="text">
+        <input type="number" name="num">
+        <input type="date" name="date">
+        <input type="color" name="color">
+        <input type="password" name="password">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Form POST</h3>
+    <form action="/inicio" method="post">
+        <input type="text" name="text">
+        <input type="number" name="num">
+        <input type="date" name="date">
+        <input type="color" name="color">
+        <input type="password" name="password">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <h3>Cadastro simples</h3>
+    <form action="/cadastro" method="post">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="email" name="login" placeholder="Login">
+        <input type="password" name="senha" placeholder="Senha">
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h3>Cadastro no banco</h3>
+    <form action="/cadastrar_usuario" method="post">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="email" name="login" placeholder="Login">
+        <input type="password" name="senha" placeholder="Senha">
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <h3>Logar usuário</h3>
+    <form action="/logar_usuario" method="post">
+        <input type="email" name="login" placeholder="Login">
+        <input type="password" name="senha" placeholder="Senha">
+        <button type="submit">Logar</button>
+    </form>
+</body>
+</html>
